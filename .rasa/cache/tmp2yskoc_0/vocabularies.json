@@ -1,0 +1,43 @@
+{
+  "text": {
+    "hello": 5,
+    "hi": 7,
+    "hey": 6,
+    "good": 3,
+    "morning": 10,
+    "evening": 2,
+    "bye": 0,
+    "goodbye": 4,
+    "see": 12,
+    "you": 16,
+    "later": 9,
+    "take": 14,
+    "care": 1,
+    "yes": 15,
+    "sure": 13,
+    "okay": 11,
+    "indeed": 8
+  },
+  "intent": {
+    "greet": 2,
+    "goodbye": 1,
+    "affirm": 0
+  },
+  "response": null,
+  "action_name": {
+    "action_listen": 6,
+    "action_restart": 7,
+    "action_session_start": 9,
+    "action_default_fallback": 4,
+    "action_deactivate_loop": 1,
+    "action_revert_fallback_events": 8,
+    "action_default_ask_affirmation": 2,
+    "action_default_ask_rephrase": 3,
+    "action_two_stage_fallback": 10,
+    "action_unlikely_intent": 11,
+    "action_back": 0,
+    "action_extract_slots": 5
+  },
+  "action_text": null,
+  "intent_response_key": null
+}

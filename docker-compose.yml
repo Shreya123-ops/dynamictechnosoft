@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  rasa:
+    image: rasa/rasa-pro:latest
+    container_name: rasa_pro
+    ports:
+      - "5005:5005"
+    volumes:
+      - ./project:/app
+    env_file:
+      - .env
+    command: >
+      run --enable-api --cors "*"

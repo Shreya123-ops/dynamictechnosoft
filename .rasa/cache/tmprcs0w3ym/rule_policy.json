@@ -1,0 +1,26 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"action_party_statement\"}}]": "action_party_statement",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"action_party_statement\"}}, {\"prev_action\": {\"action_name\": \"action_party_statement\"}, \"user\": {\"intent\": \"action_party_statement\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"check_balance\"}}]": "action_check_balance",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"check_balance\"}}, {\"prev_action\": {\"action_name\": \"action_check_balance\"}, \"user\": {\"intent\": \"check_balance\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"product_stock\"}}]": "action_product_stock",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"product_stock\"}}, {\"prev_action\": {\"action_name\": \"action_product_stock\"}, \"user\": {\"intent\": \"product_stock\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"action_party_statement\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"check_balance\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"product_stock\"}}, {\"prev_action\": {\"action_name\": \"action_product_stock\"}, \"user\": {\"intent\": \"product_stock\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"product_stock\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"action_party_statement\"}}, {\"prev_action\": {\"action_name\": \"action_party_statement\"}, \"user\": {\"intent\": \"action_party_statement\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"check_balance\"}}, {\"prev_action\": {\"action_name\": \"action_check_balance\"}, \"user\": {\"intent\": \"check_balance\"}}]",
+      "predicting default action with intent back",
+      "predicting default action with intent restart"
+    ]
+  }
+}

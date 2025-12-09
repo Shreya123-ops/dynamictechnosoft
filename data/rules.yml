@@ -1,0 +1,23 @@
+version: "3.1"
+
+rules:
+
+- rule: Run balance action when party name is provided
+  steps:
+    - intent: check_balance
+    - action: action_check_balance
+
+- rule: Get ledger statement
+  steps:
+    - intent: party_statement
+    - action: action_party_statement
+
+- rule: Show product stock
+  steps:
+    - intent: product_stock
+    - action: action_product_stock
+
+- rule: Show product statement
+  steps:
+    - intent: product_statement
+    - action: action_product_statement

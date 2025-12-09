@@ -1,0 +1,164 @@
+version: "3.1"
+
+nlu:
+- intent: check_balance
+  examples: |
+    - show me the balance of [Ram](party_name)
+    - balance of [Hari](party_name)
+    - show balance of [3D Advertising](party_name)
+    - what is the balance of [XYZ Traders](party_name)
+    - give me the balance of [Cash](party_name)
+    - balance of [A.G.S. Trading](party_name)
+    - show me the balance of [A.D.B. Steel Aluminum And Metal Udhyog](party_name)
+    - balance for [Alkon](party_name)
+    - closing of [Ram](party_name)
+    - closing balance of [Hari](party_name)
+    - show me closing for [A.H. Enterprises](party_name)
+    - closing amount of [C.E.CONSTRUCTION PVT.LTD.](party_name)
+    - closing for [Amatya Tar Jali & Steel Fabricator Pvt. Ltd.](party_name)
+
+- intent: list_top_customers
+  examples: |
+    - show top [5](number) customers
+    - show top [10](number) customers
+    - list top [15](number) customers
+    - show top customers
+    - list top customers
+    - give me top customers
+
+
+- intent: action_top_party
+  examples: |
+    - show me top 10 vendors
+    - top 5 vendors
+    - list top 20 vendors 
+    - who are the top 15 vendors 
+    - give me top 10 vendors
+    - top vendors
+    - show top 7 vendors
+
+- intent: action_bottom_credit
+  examples: |
+    - show me bottom 10 customers by credit
+    - bottom 5 customers
+    - list bottom 20 customers by credit
+    - who are the bottom 15 customers
+    - give me bottom 10 customers
+    - bottom customers
+    - show bottom 7 customers by credit
+  
+- intent: action_party_statement
+  examples: |
+    - show me [Ram](party_name) statement
+    - give me statement of [Hari](party_name)
+    - [A.G.S. Trading](party_name) ka statement
+    - [Shivam Store](party_name) ledger statement
+    - statement of [B.P Hardware](party_name)
+    - show statement of [3D Advertising](party_name)
+
+- intent: product_stock
+  examples: |
+    - show current stock of [Coke Bottle](product_name)
+    - current stock of [Pepsi](product_name)
+    - stock of [Maggi](product_name)
+    - give me current stock of [coke] (product_name)
+    - what is the current stock of [coke] (product_name)
+    - give stock of [coke](product_name)
+    - please give current stock of [coke](product_name)
+  
+- intent: top_products_value
+  examples: |
+    - top 10 products by value
+    - show top 5 products by stock value
+    - top products value wise
+    - show highest stock value products
+    - which products have the highest value
+    - list top products with most value
+    - top product value
+    - top products value
+    - top 20 product value
+    - highest stock value items
+    - show me products with highest stock value
+    - list top 15 products by value
+    - top products based on stock value
+    - product value top list
+    - give me top products by value
+    - top 2 products by value
+    
+    
+    
+- intent: check_bottom_products
+  examples: |
+    - show me bottom 5 products by stock
+    - bottom 10 products
+    - lowest 3 products in stock
+    - products with lowest quantity
+    - show bottom products
+    - list lowest products
+    - what are the bottom 7 products
+    - display products with lowest stock
+    - bottom products by quantity
+    - lowest in stock
+
+- intent: top_products_purchased
+  examples: |
+    - top 5 products purchased
+    - show top 10 purchased products
+    - give me top 3 products by InQty
+    - list top products purchased
+    - which products were purchased the most
+    - show me top purchased products
+
+- intent: product_statement
+  examples: |
+    - Statement of [Coke Bottle](product_name)
+    - Show statement of [Pepsi Can](product_name)
+    - Give me the statement of [Coke](product_name)
+    - Product statement of [Sprite](product_name)
+    - Show stock statement of [Fanta](product_name)
+    - I want statement for [Mountain Dew](product_name)
+
+- intent: greet
+  examples: |
+    - hello
+    - hi
+    - hey
+    - hello bot
+
+# Optional lookup (helps accuracy but not required)
+- lookup: party_name
+  examples: |
+    - Ram
+    - Hari
+    - Cash
+    - 3D Advertising
+    - XYZ Traders
+    - Alkon
+    - A.G.S. Trading
+    - A.H. Enterprises
+    - C.E.CONSTRUCTION PVT.LTD.
+    - A.D.B. Steel Aluminum And Metal Udhyog
+
+- lookup: product_name
+  examples: |
+    - Adjust Wrench 15 inch Tata
+    - Al. Aldrop 6"
+    - Al.Aldrop 8"
+    - Alkon / Cumi Disc
+    - Allen (LN) Key
+    - Almunium Pipe Bracket
+    - Almunium Pipe Supporting
+    - Aluminium Angle
+    - Aluminium Barfi Jali 2.5 ft
+
+# Regex to support long/dynamic names (thousands of names)
+regex_features:
+- name: party_name
+  pattern: "[A-Za-z0-9&.,'\"/() -]+"
+
+- name: product_name
+  pattern: "[A-Za-z0-9&.,'\"/() -]+"
+
+- name: number
+  pattern: '\b\d+\b'
+

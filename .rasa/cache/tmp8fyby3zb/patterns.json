@@ -1,0 +1,6 @@
+[
+  {
+    "name": "party_name",
+    "pattern": "(\\bram\\b)"
+  }
+]

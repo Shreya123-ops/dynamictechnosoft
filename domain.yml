@@ -1,0 +1,47 @@
+version: "3.1"
+
+intents:
+  - check_balance
+  - list_top_customers
+  - get_statement
+  - party_statement
+  - product_stock
+  - top_products_value
+  - check_bottom_products
+  - top_products_purchased
+  - product_statement
+  - greet
+
+entities:
+  - party_name
+  - product_name
+
+slots:
+  product_name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: product_name
+
+  party_name:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: party_name
+
+actions:
+  - action_check_balance
+  - action_top_customer
+  - action_get_statement
+  - action_products_purchased
+  - action_party_statement
+  - action_product_stock
+  - action_product_statement
+  - action_bottom_products
+  - action_top_products_value
+
+responses:
+  utter_ask_party_name:
+    - text: "Please provide the party name"

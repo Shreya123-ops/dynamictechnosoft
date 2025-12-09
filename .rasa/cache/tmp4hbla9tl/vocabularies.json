@@ -1,0 +1,32 @@
+{
+  "text": {
+    "show": 5,
+    "me": 2,
+    "the": 6,
+    "balance": 0,
+    "of": 3,
+    "ram": 4,
+    "what": 7,
+    "is": 1
+  },
+  "intent": {
+    "check_balance": 0
+  },
+  "response": null,
+  "action_name": {
+    "action_listen": 6,
+    "action_restart": 7,
+    "action_session_start": 9,
+    "action_default_fallback": 4,
+    "action_deactivate_loop": 1,
+    "action_revert_fallback_events": 8,
+    "action_default_ask_affirmation": 2,
+    "action_default_ask_rephrase": 3,
+    "action_two_stage_fallback": 10,
+    "action_unlikely_intent": 11,
+    "action_back": 0,
+    "action_extract_slots": 5
+  },
+  "action_text": null,
+  "intent_response_key": null
+}

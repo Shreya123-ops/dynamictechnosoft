@@ -1,0 +1,15 @@
+{
+  "balance of Ram": "check_balance",
+  "check balance of Hari": "check_balance",
+  "show balance Ramesh": "check_balance",
+  "ledger Shyam": "check_balance",
+  "get balance Site A": "check_balance",
+  "balance Site B": "check_balance",
+  "ram balance": "check_balance",
+  "hari ledger": "check_balance",
+  "ramesh closing balance": "check_balance",
+  "shyam": "inform",
+  "site a": "inform",
+  "I want to check balance": "inform",
+  "show me ledger": "inform"
+}

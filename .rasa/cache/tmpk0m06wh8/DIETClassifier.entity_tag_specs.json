@@ -1,0 +1,36 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-number",
+      "2": "I-number",
+      "3": "L-number",
+      "4": "U-number",
+      "5": "B-party_name",
+      "6": "I-party_name",
+      "7": "L-party_name",
+      "8": "U-party_name",
+      "9": "B-product_name",
+      "10": "I-product_name",
+      "11": "L-product_name",
+      "12": "U-product_name",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-number": 1,
+      "I-number": 2,
+      "L-number": 3,
+      "U-number": 4,
+      "B-party_name": 5,
+      "I-party_name": 6,
+      "L-party_name": 7,
+      "U-party_name": 8,
+      "B-product_name": 9,
+      "I-product_name": 10,
+      "L-product_name": 11,
+      "U-product_name": 12,
+      "O": 0
+    },
+    "num_tags": 13
+  }
+]

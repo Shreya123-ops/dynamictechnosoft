@@ -1,0 +1,36 @@
+{
+  "text": {
+    "show": 7,
+    "me": 4,
+    "the": 8,
+    "balance": 0,
+    "of": 5,
+    "ram": 6,
+    "what": 9,
+    "is": 3,
+    "hello": 1,
+    "hi": 2
+  },
+  "intent": {
+    "check_balance": 0,
+    "greet": 1
+  },
+  "response": null,
+  "action_name": {
+    "action_listen": 7,
+    "action_restart": 8,
+    "action_session_start": 10,
+    "action_default_fallback": 5,
+    "action_deactivate_loop": 2,
+    "action_revert_fallback_events": 9,
+    "action_default_ask_affirmation": 3,
+    "action_default_ask_rephrase": 4,
+    "action_two_stage_fallback": 11,
+    "action_unlikely_intent": 12,
+    "action_back": 0,
+    "action_extract_slots": 6,
+    "action_check_balance": 1
+  },
+  "action_text": null,
+  "intent_response_key": null
+}

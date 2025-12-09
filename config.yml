@@ -1,0 +1,18 @@
+language: en   # mandatory
+
+pipeline:
+- name: WhitespaceTokenizer
+- name: CountVectorsFeaturizer
+- name: DIETClassifier
+  epochs: 100
+  constrain_similarities: true
+  entity_recognition: true
+- name: EntitySynonymMapper
+
+policies:
+- name: MemoizationPolicy
+- name: RulePolicy
+  core_fallback_threshold: 0.3
+  core_fallback_action_name: "action_default_fallback"
+- name: UnexpecTEDIntentPolicy
+assistant_id: 20251128-114349-radial-liquor

@@ -1,0 +1,13 @@
+{
+  "0": "action_bottom_credit",
+  "1": "action_party_statement",
+  "2": "action_top_party",
+  "3": "check_balance",
+  "4": "check_bottom_products",
+  "5": "greet",
+  "6": "list_top_customers",
+  "7": "product_statement",
+  "8": "product_stock",
+  "9": "top_products_purchased",
+  "10": "top_products_value"
+}
