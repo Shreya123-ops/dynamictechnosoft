@@ -1,1 +1,20 @@
+.DS_Store
 dynamic_technosoft/
+# macOS system files
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.sqlite3
+
+# VSCode or other IDE
+.vscode/
+.idea/
+
+# Existing ignored folder
+dynamic_technosoft/
+
