@@ -1,0 +1,83 @@
+Last login: Tue Dec  9 16:14:37 on ttys064
+mac@LULU-110 rasa_pro_setup % git --version
+git version 2.52.0
+mac@LULU-110 rasa_pro_setup % clear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+mac@LULU-110 rasa_pro_setup % pwd
+/Users/mac/Desktop/rasa_pro_setup
+mac@LULU-110 rasa_pro_setup % git init
+
+Reinitialized existing Git repository in /Users/mac/Desktop/rasa_pro_setup/.git/
+mac@LULU-110 rasa_pro_setup % git status
+
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .DS_Store
+	modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore.save
+
+no changes added to commit (use "git add" and/or "git commit -a")
+mac@LULU-110 rasa_pro_setup % ls -a
+
+.			.rasa			docker-compose.yml
+..			README.md		domain.yml
+.DS_Store		__pycache__		dynamic_technosoft
+.env			actions			endpoints.yml
+.envn			api			models
+.git			config.yml		project
+.gitignore		credential.yml		requirements.txt
+.gitignore.save		data
+mac@LULU-110 rasa_pro_setup % code .gitignore   # VSCode
+nano .gitignore   # Terminal editor
+
+zsh: command not found: code
+
+  UW PICO 5.09                        File: .gitignore                          
+
+.DS_Store
+dynamic_technosoft/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^G Get Help  ^O WriteOut  ^R Read File ^Y Prev Pg   ^K Cut Text  ^C Cur Pos   
+^X Exit      ^J Justify   ^W Where is  ^V Next Pg   ^U UnCut Text^T To Sp.DS_Store
+dynamic_technosoft/
