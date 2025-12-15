@@ -6,7 +6,6 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 from rapidfuzz import process
 
-
 # ----------------- LedgerHandler Class -----------------
 class LedgerHandler:
     def __init__(self):
