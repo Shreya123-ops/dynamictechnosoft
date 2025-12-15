@@ -29,23 +29,23 @@ nlu:
 
 - intent: action_top_party
   examples: |
-    - show me top 10 vendors
-    - top 5 vendors
-    - list top 20 vendors 
-    - who are the top 15 vendors 
-    - give me top 10 vendors
+    - show me top 10(number) vendors
+    - top 5(number) vendors
+    - list top 20(number) vendors 
+    - who are the top 15(number) vendors 
+    - give me top 10(number) vendors
     - top vendors
-    - show top 7 vendors
+    - show top 7(number) vendors
 
 - intent: action_bottom_credit
   examples: |
-    - show me bottom 10 customers by credit
-    - bottom 5 customers
-    - list bottom 20 customers by credit
-    - who are the bottom 15 customers
-    - give me bottom 10 customers
+    - show me bottom 10(number) customers by credit
+    - bottom 5(number) customers
+    - list bottom 20(number) customers by credit
+    - who are the bottom 15(number) customers
+    - give me bottom 10(number) customers
     - bottom customers
-    - show bottom 7 customers by credit
+    - show bottom 7(number) customers by credit
   
 - intent: action_party_statement
   examples: |
@@ -68,43 +68,43 @@ nlu:
   
 - intent: top_products_value
   examples: |
-    - top 10 products by value
-    - show top 5 products by stock value
+    - top 10(number) products by value
+    - show top 5(number) products by stock value
     - top products value wise
     - show highest stock value products
     - which products have the highest value
     - list top products with most value
     - top product value
     - top products value
-    - top 20 product value
+    - top 20(number) product value
     - highest stock value items
     - show me products with highest stock value
-    - list top 15 products by value
+    - list top 15(number) products by value
     - top products based on stock value
     - product value top list
     - give me top products by value
-    - top 2 products by value
+    - top 2(number) products by value
     
     
     
 - intent: check_bottom_products
   examples: |
-    - show me bottom 5 products by stock
-    - bottom 10 products
-    - lowest 3 products in stock
+    - show me bottom 5(number) products by stock
+    - bottom 10(number) products
+    - lowest 3(number) products in stock
     - products with lowest quantity
     - show bottom products
     - list lowest products
-    - what are the bottom 7 products
+    - what are the bottom 7(number) products
     - display products with lowest stock
     - bottom products by quantity
     - lowest in stock
 
 - intent: top_products_purchased
   examples: |
-    - top 5 products purchased
-    - show top 10 purchased products
-    - give me top 3 products by InQty
+    - top 5(number) products purchased
+    - show top 10(number) purchased products
+    - give me top 3(number) products by InQty
     - list top products purchased
     - which products were purchased the most
     - show me top purchased products
